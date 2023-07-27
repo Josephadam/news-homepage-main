@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/styleguide.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main theme-light-nav theme-page-light">
+      <nav class="nav-mobile-not-active theme-nav-dark theme-nav-transitioning">
+        <div class="nav-links">
+          <div class="nav-links-wrapper">
+            <a href="/" class="logo" data-hover="logo">
+              <img src="assets/images/logo.svg" alt="" />
+            </a>
+            <ul class="ul-desktop">
+              <li class="btn btn-link" data-barba-update>
+                <a href="https://www.basecreate.com/work" class="btn-click">
+                  <div class="btn-text btn-original-text">
+                    <span>Home</span>
+                  </div>
+                  <div class="btn-fill btn-duplicate-fill"></div>
+                </a>
+              </li>
+              <li class="btn btn-link" data-barba-update>
+                <a href="https://www.basecreate.com/services" class="btn-click">
+                  <div class="btn-text btn-original-text rotating-text">
+                    <span>New</span>
+                  </div>
+                  <div class="btn-fill btn-duplicate-fill"></div>
+                </a>
+              </li>
+              <li class="btn btn-link" data-barba-update>
+                <a href="https://www.basecreate.com/about" class="btn-click">
+                  <div class="btn-text btn-original-text">
+                    <span>Popular</span>
+                  </div>
+                  <div class="btn-fill btn-duplicate-fill"></div>
+                </a>
+              </li>
+              <li class="btn btn-link" data-barba-update>
+                <a href="https://www.basecreate.com/news" class="btn-click">
+                  <div class="btn-text btn-original-text">
+                    <span>Trending</span>
+                  </div>
+                  <div class="btn-fill btn-duplicate-fill"></div>
+                </a>
+              </li>
+              <li class="btn btn-link" data-barba-update>
+                <a
+                  href="https://www.basecreate.com/responsibility"
+                  class="btn-click"
+                >
+                  <div class="btn-text btn-original-text">
+                    <span>Categories</span>
+                  </div>
+                  <div class="btn-fill btn-duplicate-fill"></div>
+                </a>
+              </li>
+            </ul>
+            <div class="wrap-right-corner">
+              <div class="hamburger-wrap">
+                <div class="hamburger" data-toggle="modal-nav-mobile">
+                  <div class="hamburger-bar"></div>
+                  <div class="hamburger-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-nav-mobile">
+          <div class="modal-block">
+            <div class="modal-block-background"></div>
+            <ul class="ul-mobile">
+              <span class="modal-small-title">Menu</span>
+              <li class="active" data-barba-update>
+                <a href="index.html">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="" data-barba-update>
+                <a href="https://www.basecreate.com/work">
+                  <span>Work</span>
+                </a>
+              </li>
+              <li class="" data-barba-update>
+                <a href="https://www.basecreate.com/services">
+                  <span>Services</span>
+                </a>
+              </li>
+              <li class="" data-barba-update>
+                <a href="https://www.basecreate.com/about">
+                  <span>About</span>
+                </a>
+              </li>
+              <li class="" data-barba-update>
+                <a href="https://www.basecreate.com/news">
+                  <span>News</span>
+                </a>
+              </li>
+              <li class="" data-barba-update>
+                <a href="https://www.basecreate.com/responsibility">
+                  <span>Responsibility</span>
+                </a>
+              </li>
+              <li class="" data-barba-update>
+                <a href="contact.html">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-nav-background" data-close="modal"></div>
+      </nav>
+      <div class="main-wrap" data-scroll-container>
+        <header
+          class="section theme-light home-header work-single-intro-image"
+          data-target="#work"
+          data-scroll-section
+        >
+          <div class="container">
+            <div class="once-in">
+              <div class="row">
+                <div class="flex-col">
+                  <div class="single-image">
+                    <img class="overlay overlay-image lazy" data-scroll data-scroll-speed="-1" data-scroll-offset="-10%, 0%"
+                      src="assets/images/image-web-3-desktop.jpg" data-src="assets/images/image-web-3-desktop.jpg"
+                      data-srcset="assets/images/image-web-3-desktop.jpg 400w, assets/images/image-web-3-desktop.jpg 540w, assets/images/image-web-3-desktop.jpg 720w, assets/images/image-web-3-desktop.jpg 1024w, assets/images/image-web-3-desktop.jpg 1440w, assets/images/image-web-3-desktop.jpg 1920w"
+                      data-sizes="100w" width="1460" height="600" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </main>
+  </body>
+</html>
