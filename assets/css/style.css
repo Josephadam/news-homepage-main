@@ -10,6 +10,7 @@ nav {
 }
 
 nav .nav-links {
+     height: var(--nav-height);
     position: absolute;
     top: 0;
     width: 100%;
@@ -423,15 +424,21 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
 }
 
 /* ------------------------- Work Single - Intro Image -------------------------------------------------- */
+.home-header .container {
+    width: 100vw;
+   padding-top: calc(var(--nav-padding-top) + var(--nav-padding-bottom));
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+}
 
 .work-single-intro-image {
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-top: -1px;
+	left: 0;
+    top: 0;
 }
 
 .work-single-intro-image.block-padding-bottom {
-	padding-bottom: var(--section-padding);
+	
 }
 
 .work-single-intro-image .single-image {
@@ -463,18 +470,30 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
 @media screen and (max-width: 764px) {
 	.work-single-intro-image .single-image {
 	width: 100%;
+    
+}
+.home-header .intro-title {
+    width: 90% !important;
 }
 }
-.home-header .container {
-    padding-top: var(--section-padding-small);
-   
-    pointer-events: none;
-}
+
 
 .home-header .container .row {
     height: 100%;
 }
 
+.home-header .intro-title {
+    width: 40%;
+}
 
+h1 .outer-span {
+	display: block;
+	overflow: hidden;
+	position: relative;
+    font-size: 3rem;
+}
 
-
+h1 .outer-span span {
+	display: block;
+	position: relative;
+}
