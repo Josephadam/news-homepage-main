@@ -15,7 +15,6 @@ nav .nav-links {
     top: 0;
     width: 100%;
     padding: var(--section-padding-small) var(--container-padding);
-    padding-left: 2rem;
     z-index: 10;
 }
 
@@ -473,7 +472,7 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
     
 }
 .home-header .intro-title {
-    width: 90% !important;
+    width: 95% !important;
 }
 }
 
@@ -484,6 +483,7 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
 
 .home-header .intro-title {
     width: 40%;
+    flex-wrap: nowrap;
 }
 
 h1 .outer-span {
