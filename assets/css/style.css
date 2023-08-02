@@ -532,6 +532,17 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
   
 }
 
+.home-header .flex-col {
+    padding-top: var(--section-padding-small);
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-intro {
+border: 1px solid red;
+    
+}
+
 
 
 
