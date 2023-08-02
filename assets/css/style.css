@@ -454,7 +454,7 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
 .wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill); /* Using auto-fill */
+    grid-template-columns: repeat(3, 1fr); /* Using auto-fill */
   
   }
 
@@ -502,9 +502,9 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
 
   .box.b .box-title h5,
 .box.b .box-title p {
-  padding-top: 5px; /* Adjust the value as needed */
-  padding-bottom: 5px; /* Adjust the value as needed */
+  padding: 5px 0; /* Adjust the value as needed */
 }
+
 
 @media (max-width: 600px) {
   .wrapper {
@@ -534,14 +534,84 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
 
 .home-header .flex-col {
     padding-top: var(--section-padding-small);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
 }
 
 .home-intro {
 border: 1px solid red;
-    
 }
+
+.home-intro img {
+    width: 38%;
+}
+
+
+.home-intro {
+  display: flex;
+  align-items: center;
+}
+
+.home-intro-text {
+  margin-left: 10px; /* Adjust this value to set the desired spacing between the image and the text */
+}
+
+.home-intro-text h4,
+.home-intro-text h5,
+.home-intro-text p {
+  padding: 5px 0; /* Adjust the top and bottom padding as needed */
+}
+
+@media (max-width: 767px) {
+  .home-header .flex-col {
+    grid-template-columns: 1fr; 
+  }
+}
+
+/* -------------flex--------------
+.home-header .flex-col {
+    padding-top: var(--section-padding-small);
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-intro {
+border: 1px solid red;
+}
+
+.home-intro img {
+    width: 38%;
+}
+
+
+.home-intro {
+  display: flex;
+  align-items: center;
+}
+
+.home-intro-text {
+  margin-left: 10px; /* Adjust this value to set the desired spacing between the image and the text 
+}
+
+.home-intro-text h4,
+.home-intro-text h5,
+.home-intro-text p {
+  padding: 5px 0; /* Adjust the top and bottom padding as needed 
+}
+
+@media (max-width: 767px) {
+  .home-header .flex-col {
+    flex-direction: column;
+  }
+}
+*/
+
+
+
+
+
+
+
 
 
 
