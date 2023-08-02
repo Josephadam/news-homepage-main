@@ -510,6 +510,10 @@ nav.theme-nav-transitioning .ul-mobile li.active a>span::before {
   .wrapper {
     grid-template-columns: 1fr; /* Single column for mobile view */
   }
+  .a {
+     grid-column: 1; /* Adjust the position of .b in mobile view */
+    grid-row: 1;
+  }
 
   .b {
     grid-column: 1; /* Adjust the position of .b in mobile view */
