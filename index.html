@@ -5,243 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/styleguide.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
 
     <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main class="main theme-light-nav theme-page-light">
-      <nav class="nav-mobile-not-active theme-nav-dark theme-nav-transitioning">
-        <div class="nav-links">
-          <div class="nav-links-wrapper">
-            <a href="/" class="logo" data-hover="logo">
-              <img src="assets/images/logo.svg" alt="" />
-            </a>
-            <ul class="ul-desktop">
-              <li class="btn btn-link" data-barba-update>
-                <a href="https://www.basecreate.com/work" class="btn-click">
-                  <div class="btn-text btn-original-text">
-                    <span>Home</span>
-                  </div>
-                  <div class="btn-fill btn-duplicate-fill"></div>
-                </a>
-              </li>
-              <li class="btn btn-link" data-barba-update>
-                <a href="https://www.basecreate.com/services" class="btn-click">
-                  <div class="btn-text btn-original-text rotating-text">
-                    <span>New</span>
-                  </div>
-                  <div class="btn-fill btn-duplicate-fill"></div>
-                </a>
-              </li>
-              <li class="btn btn-link" data-barba-update>
-                <a href="https://www.basecreate.com/about" class="btn-click">
-                  <div class="btn-text btn-original-text">
-                    <span>Popular</span>
-                  </div>
-                  <div class="btn-fill btn-duplicate-fill"></div>
-                </a>
-              </li>
-              <li class="btn btn-link" data-barba-update>
-                <a href="https://www.basecreate.com/news" class="btn-click">
-                  <div class="btn-text btn-original-text">
-                    <span>Trending</span>
-                  </div>
-                  <div class="btn-fill btn-duplicate-fill"></div>
-                </a>
-              </li>
-              <li class="btn btn-link" data-barba-update>
-                <a
-                  href="https://www.basecreate.com/responsibility"
-                  class="btn-click"
-                >
-                  <div class="btn-text btn-original-text">
-                    <span>Categories</span>
-                  </div>
-                  <div class="btn-fill btn-duplicate-fill"></div>
-                </a>
-              </li>
-            </ul>
-            <div class="wrap-right-corner">
-              <div class="hamburger-wrap">
-                <div class="hamburger" data-toggle="modal-nav-mobile">
-                  <div class="hamburger-bar"></div>
-                  <div class="hamburger-bar"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-nav-mobile">
-          <div class="modal-block">
-            <div class="modal-block-background"></div>
-            <ul class="ul-mobile">
-              <span class="modal-small-title">Menu</span>
-              <li class="active" data-barba-update>
-                <a href="index.html">
-                  <span>Home</span>
-                </a>
-              </li>
-              <li class="" data-barba-update>
-                <a href="https://www.basecreate.com/work">
-                  <span>Work</span>
-                </a>
-              </li>
-              <li class="" data-barba-update>
-                <a href="https://www.basecreate.com/services">
-                  <span>Services</span>
-                </a>
-              </li>
-              <li class="" data-barba-update>
-                <a href="https://www.basecreate.com/about">
-                  <span>About</span>
-                </a>
-              </li>
-              <li class="" data-barba-update>
-                <a href="https://www.basecreate.com/news">
-                  <span>News</span>
-                </a>
-              </li>
-              <li class="" data-barba-update>
-                <a href="https://www.basecreate.com/responsibility">
-                  <span>Responsibility</span>
-                </a>
-              </li>
-              <li class="" data-barba-update>
-                <a href="contact.html">
-                  <span>Contact</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="modal-nav-background" data-close="modal"></div>
-      </nav>
-      <div class="main-wrap" data-scroll-container>
-        <header
-          class="section theme-light home-header work-single-intro-image"
-          data-target="#work"
-          data-scroll-section
-        >
-          <div class="container">
-            <div class="wrapper">
-              <div class="box a">
-                <img
-                  class="overlay-image lazy"
-                  data-scroll
-                  data-scroll-speed="-1"
-                  data-scroll-offset="-10%, 0%"
-                  src="assets/images/image-web-3-desktop.jpg"
-                  data-src="assets/images/image-web-3-desktop.jpg"
-                  data-srcset="assets/images/image-web-3-desktop.jpg 400w, assets/images/image-web-3-desktop.jpg 540w, assets/images/image-web-3-desktop.jpg 720w, assets/images/image-web-3-desktop.jpg 1024w, assets/images/image-web-3-desktop.jpg 1440w, assets/images/image-web-3-desktop.jpg 1920w"
-                  data-sizes="100w"
-                  width="1460"
-                  height="600"
-                  alt=""
-                />
-              </div>
-              <div class="box b">
-                <div class="box-title">
-                  <h4>New</h4>
-                  <h5>Hydrogen VS Electric Cars</h5>
-                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                </div>
-                <div class="stripe"></div>
-                <div class="box-title">
-                  <h5>Hydrogen VS Electric Cars</h5>
-                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                </div>
-                <div class="stripe"></div>
-                <div class="box-title">
-                  <h5>Hydrogen VS Electric Cars</h5>
-                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                </div>
-              </div>
-              <div class="box c"><h1>The Bright <br>Future of <br>Web 3.0?</h1></div>
-              <div class="box d">
-                <p>
-                  We dive into the next evolution of the web that claims to put
-                  the power of the platforms back into the hands of the people.
-                  But is it really fulfilling its promise?
-                </p>
-              </div>
-            </div>
-            <div class="flex-col">
-            <div class="home-intro">
-              <img class="overlay-image lazy" data-scroll data-scroll-speed="-1" data-scroll-offset="-10%, 0%"
-                src="assets/images/image-retro-pcs.jpg" data-src="assets/images/image-web-3-desktop.jpg"
-                data-srcset="assets/images/image-web-3-desktop.jpg 400w, assets/images/image-web-3-desktop.jpg 540w, assets/images/image-web-3-desktop.jpg 720w, assets/images/image-web-3-desktop.jpg 1024w, assets/images/image-web-3-desktop.jpg 1440w, assets/images/image-web-3-desktop.jpg 1920w"
-                data-sizes="100w" width="200" height="254" alt="" />
-              <div class="home-intro-text">
-                <h4>03</h4>
-                <h5>Reving retro pcs</h5>
-                <p>What happens when old PCs are given modern upgrades?</p>
-              </div>
-            </div>
-            <div class="home-intro">
-              <img class="overlay-image lazy" data-scroll data-scroll-speed="-1" data-scroll-offset="-10%, 0%"
-                src="assets/images/image-top-laptops.jpg" data-src="assets/images/image-web-3-desktop.jpg"
-                data-srcset="assets/images/image-web-3-desktop.jpg 400w, assets/images/image-web-3-desktop.jpg 540w, assets/images/image-web-3-desktop.jpg 720w, assets/images/image-web-3-desktop.jpg 1024w, assets/images/image-web-3-desktop.jpg 1440w, assets/images/image-web-3-desktop.jpg 1920w"
-                data-sizes="100w" width="200" height="254" alt="" />
-                <div class="home-intro-text">
-                  <h4>03</h4>
-                  <h5>Reving retro pcs</h5>
-                  <p>What happens when old PCs are given modern upgrades?</p>
-                </div>
-            </div>
-            <div class="home-intro">
-              <img class="overlay-image lazy" data-scroll data-scroll-speed="-1" data-scroll-offset="-10%, 0%"
-                src="assets/images/image-gaming-growth.jpg" data-src="assets/images/image-web-3-desktop.jpg"
-                data-srcset="assets/images/image-web-3-desktop.jpg 400w, assets/images/image-web-3-desktop.jpg 540w, assets/images/image-web-3-desktop.jpg 720w, assets/images/image-web-3-desktop.jpg 1024w, assets/images/image-web-3-desktop.jpg 1440w, assets/images/image-web-3-desktop.jpg 1920w"
-                data-sizes="100w" width="200" height="254" alt="" />
-                <div class="home-intro-text">
-                  <h4>03</h4>
-                  <h5>Reving retro pcs</h5>
-                  <p>What happens when old PCs are given modern upgrades?</p>
-                </div>
-            </div>
-            </div>
-            </div>
-          </div>
-        </header>
-          <section class="section theme-light work-single-intro-image" data-scroll-section>
-            <div class="container">
-            <div class="once-in">
-              <div class="row">
-                <div class="flex-col">
-                  <div class="single-image">
-                    <img class="overlay overlay-image lazy" data-scroll data-scroll-speed="-1" data-scroll-offset="-10%, 0%"
-                      src="assets/images/image-web-3-desktop.jpg" data-src="../media/IMAGES/lambowash.webp"
-                      data-srcset="../media/IMAGES/lambowash.webp 400w, ../media/IMAGES/lambowash.webp 540w, ../media/IMAGES/lambowash.webp 720w, ../media/IMAGES/lambowash.webp 1024w, ../media/IMAGES/lambowash.webp 1440w, ../media/IMAGES/lambowash.webp 1920w"
-                      data-sizes="100w" width="1920" height="1080" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-          </section>
-          
+    <header class="grid">
+      <div id="image"></div>
+      <div class="title">
+        <h1>The Bright Future of Web 3.0</h1>
       </div>
-    </main>
+      <div class="content-p">
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms
+          back into the hands of the people. But is it really fulfilling its promise?
+        </p>
+        <a href="" class="btn">
+          <div class="btn-text btn-click">Read More</div>
+        </a>
+      </div>
+      <div class="news">
+        <h2>New</h2>
+        <div class="news-articles">
+        <a class="news-1" href="">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </a>
+        <hr>
+        <a class="news-2" href="">
+          <h3>The Downsides of Al Artistry</h3>
+          <p>What are the possible adverse effects of on-demand Al image generation?</p>
+        </a>
+        <hr>
+        <a class="news-3" href="">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means</p>
+        </a>
+        </div>
+      </div>
+      
+      <a href="" class="article">
+        <img src="assets/images/image-retro-pcs.jpg" width="200" height="254" alt="">
+        <div class="article-content theme-light">
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </a>
+      <a href="" class="article">
+        <img src="assets/images/image-top-laptops.jpg" width="200" height="254" alt="">
+        <div class="article-content theme-light">
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </a>
+      <a href="" class="article">
+        <img src="assets/images/image-gaming-growth.jpg" width="200" height="254" alt="">
+        <div class="article-content theme-light">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </a>
+    </header>
   </body>
 </html>
