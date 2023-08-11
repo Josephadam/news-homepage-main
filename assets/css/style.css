@@ -2,6 +2,7 @@
 
 
 nav {
+  top: 0;
   z-index: 900;
   width: 100%;
   height: 50px;
@@ -9,8 +10,9 @@ nav {
 }
 
 nav .logo {
+  width: 6.5rem;
   position: fixed;
-margin: 1.5rem;
+padding: 1.5rem;
 z-index: 500;
 }
 
@@ -19,15 +21,15 @@ nav .ul-desktop {
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
-  margin: 1.5rem;
-  padding-top: 1rem;
+  padding: 1.5rem;
+  padding-top: 2rem;
 }
 
 
 
 .grid {
   position: relative;
-  margin: 1.5rem;
+  padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: 300px 175px 100px;
@@ -66,15 +68,20 @@ nav .ul-desktop {
   background-color: var(--secondary);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
   padding: var(--padding);
 }
 
 .news-articles  {
 display: flex;
 flex-direction: column;
+justify-content: center;
 gap: 1rem;
 flex-grow: 1;
+}
+
+.news-articles h3 {
+white-space: nowrap;
 }
 
 hr {

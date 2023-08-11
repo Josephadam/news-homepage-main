@@ -15,6 +15,8 @@ body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
   --padding: 2rem 1.25rem;
+  padding-top: 4rem;
+  --animation-smooth: all 0.7s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 
@@ -516,16 +518,27 @@ video.overlay {
 	will-change: transform;
 	outline: 0;
 	text-transform: uppercase;
+	background-size: 300%;
 }
 
 .btn-click:hover {
 	cursor: pointer;
+	background-color: var(--secondary);
+	transition: var(--animation-smooth);
+
 }
 
 .btn-text {
 	display: flex;
 	justify-content: center;
 }
+
+a:hover {
+color: var(--primary);
+	transition: var(--animation-smooth);
+}
+
+
 
 
 /* --- Button Link External --- */
